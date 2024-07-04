@@ -30,13 +30,21 @@ html,body{
     margin:auto;
     box-shadow: 0px 2px 10px 0 rgb(17,134,17);
     overflow: auto;
-    
-}
-
-.popup-content{
-    padding:7%;
+    padding:2.5%;
     font-size: 21px;
 }
+
+@media only screen and (min-width:340px) and (max-width:800px) {
+
+.popup{
+   
+   width:50%;
+   font-size:18px; 
+   left:32%;
+   padding:3%;
+}
+}
+
 
 #close{
     cursor:pointer;
