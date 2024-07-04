@@ -40,7 +40,7 @@ html,body{
    
    width:50%;
    font-size:18px; 
-   left:32%;
+   left:28%;
    padding:3%;
 }
 }
@@ -139,6 +139,18 @@ html,body{
     width:75%;
     height: calc(100% - 100px);
     overflow:auto;
+}
+
+@media only screen and (min-width:601px) and (max-width:1024px){
+#panel-bottom{
+    height:calc(100% - 145px);
+}
+}
+
+@media only screen and (min-width:340px) and (max-width:600px){
+    #panel-bottom{
+        height:calc(100% - 200px);
+    }
 }
 
 .bubble{
