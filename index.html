@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hit the Bubble</title>
     <link rel="stylesheet" type="text/css" href="bubble.css">
 </head>
 <body>
+    <div class="popup">
+        <div class="popup-content">
+            <span id="close">&times;</span>
+            <h2>Hit the Bubble</h2><br>
+            <h3>Game Rules:-</h3><br>
+            <p>1. <i>Click Start and a random number will appear in the 'Hit' Box between 0 to 15.</i></p><br>
+            <p>2. <i>Numbers also between 0 to 15 will get shuffled randomly in the bubbles.</i></p><br>
+            <p>3. <i>If the correct bubble is clicked whose number matches that of Hit number then, score increases by 5, bubbles get shuffled again and Hit number changes or remains same.</i></p><br>
+            <p>4.<i> Goal is to hit maximum number of correct bubbles within 60 seconds.</i></p><br>
+            <p>5. <i>When timer reaches 0, it will be 'Game Over'.</i></p>
+        </div>
+    </div>
     <div id="main">
         <div id="panel">
             <div id="panel-top">
                 <div class="elem">
                     <h2>Hit</h2>
-                    <div id="hitval" class="box">5</div>
+                    <div id="hit-val" class="box">?</div>
                 </div>
                 <div class="elem">
                     <h2>Timer</h2>
-                    <div id="timervalue" class="box">60</div>
+                    <div id="timer-val" class="box">60</div>
                 </div>
                 <div class="elem">
                     <h2>Score</h2>
-                    <div id="scoreval" class="box">0</div>
+                    <div id="score-val" class="box">0</div>
+                </div>
+                <div class="elem">
+                    <button id="reset">Reset</button>
+                    <button id="start">Start</button>
                 </div>
             </div>
             <div id="panel-bottom">
-                <div class="bubble">5</div>
+                <div class="bubble"></div>
             </div>
         </div>
     </div>
